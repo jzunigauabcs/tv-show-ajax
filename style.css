@@ -1,10 +1,12 @@
 body {
+	background-color: #d6d6d6;
 	margin: 0;
 }
 h1, h2, h3,h4, h5, h6 {
 	margin: 0;
 }
 .container {
+	box-sizing: border-box;
 	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -13,7 +15,6 @@ h1, h2, h3,h4, h5, h6 {
 }
 .container-center {
 	align-items: center;
-	background-color: #E1E2E1;
 	box-sizing: border-box;
 	display: flex;
 	height: 100vh;
@@ -24,9 +25,7 @@ h1, h2, h3,h4, h5, h6 {
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	height: 350px;
+	height: 320px;
 	width: 340px;
 	padding-bottom: 30px;
 }
@@ -54,10 +53,14 @@ h1, h2, h3,h4, h5, h6 {
 .logo i{
 	font-size: 50px;
 }
+.form-body {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
 .form-control {
 	border: 0;
-	display: block;
-    width: 80%;
     padding: 0;
     font-size: 14px;
     line-height: 1.42857143;
@@ -70,10 +73,13 @@ h1, h2, h3,h4, h5, h6 {
 	margin-bottom: 10px;
 	outline: none;
 }
+.form-control-lg {
+    width: 100%;
+
+}
 .btn {
 	background-color: #3849aa;
 	color: #ffffff;
-	width: 80%;
 	position: relative;
     cursor: pointer;
     display: inline-block;
@@ -81,6 +87,9 @@ h1, h2, h3,h4, h5, h6 {
     padding: 0 16px;
     height: 36px;
     line-height: 36px;
+}
+.btn-lg {
+	width: 100%;
 }
 header {
 	background-color: #3849aa;
@@ -95,4 +104,53 @@ header .container {
 	color: white;
 	margin-left: auto;
 	text-decoration: none;;
+}
+.search {
+	margin: 0 auto;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	width: 500px;
+}
+.search input {
+	flex-grow: 2;
+}
+.shows {
+	display: flex;;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.show {
+	background-color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	width: 350px;
+}
+.show-img {
+	position: relative;
+	display: flex;
+}
+.show-img img{
+	width: 100%;
+	filter: brightness(0.7);
+}
+.show-title {
+	color: white;
+	bottom: 0;
+	font-weight: 900;
+	font-size: 18px;
+	position: absolute;
+	padding: 24px;
+}
+.show p{
+	color: #6b6f82;
+	padding: 24px 10px;
+}
+.show p a {
+	color: #1661be;
+	text-decoration: none;
 }
