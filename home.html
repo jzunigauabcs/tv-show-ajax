@@ -12,68 +12,34 @@
     <body>
         	<header class="header">
         		<div class="container">
-        			<h1 class="logo">TV-SHOW &nbsp;<i class="fas fa-tv"></i></h1>
-        			<a href="#" class="logout">Salir <i class="fas fa-sign-out-alt"></i></a>
+        			<h1 class="logo"><a href="index.html">TV-SHOW &nbsp;<i class="fas fa-tv"></i></a></h1>
+                    <div class="pull-left">
+        			<a href="#" class="username"><i class="fas fa-user"></i></a>
+                    <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
         		</div>
         	</header>
             <main class="main">
                 <div class="container">
                     <section class="search">
-                        <input type="text" class="form-control"placeholder="Buscar show">
-                        <button class="btn">Buscar</button>
+                        <input type="text" id="search" class="form-control"placeholder="Buscar show">
+                        <button  id="btnSearch" class="btn">Buscar</button>
                     </section>
-                    <section class="shows">
-                        <article class="show">
-                            <div class="show-img">
-                                <img src="http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg" alt="">
-                                <span class="show-title">The Flash</span>
-                                
-                            </div>
-                            <p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel.  <a href="#">Ver más</a>
-                            </p>
-                        </article>
-                        <article class="show">
-                            <div class="show-img">
-                                <img src="http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg" alt="">
-                                <span class="show-title">The Flash</span>
-                                
-                            </div>
-                            <p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel.  <a href="#">Ver más</a>
-                            </p>
-                        </article>
-                        <article class="show">
-                            <div class="show-img">
-                                <img src="http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg" alt="">
-                                <span class="show-title">The Flash</span>
-                                
-                            </div>
-                            <p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel.  <a href="#">Ver más</a>
-                            </p>
-                        </article>
-                        <article class="show">
-                            <div class="show-img">
-                                <img src="http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg" alt="">
-                                <span class="show-title">The Flash</span>
-                                
-                            </div>
-                            <p class="show-summary">After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel.  <a href="#">Ver más</a>
-                            </p>
-                        </article>
-                        <article class="show">
-                            <div class="show-img">
-                                <img src="http://static.tvmaze.com/uploads/images/original_untouched/210/527217.jpg" alt="">
-                                <span class="show-title">The Flash</span>
-                                
-                            </div>
-                            <p class="show-summary">After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel.  <a href="#">Ver más</a>
-                            </p>
-                        </article>
+                    <section class="load hidden">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </section>
+                    <section id="showContainer" class="shows">
                     </section>
                 </div>
             </main>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
-        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="Show.js"></script>
         <script src="app.js"></script>
+        <script>
+            init()
+        </script>
 		
     </body>
 </html>
