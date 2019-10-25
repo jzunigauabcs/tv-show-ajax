@@ -154,7 +154,7 @@ header .container {
 }
 .show p{
 	color: #6b6f82;
-	padding: 24px 10px;
+	padding: 0 10px;
 }
 .show p a {
 	color: #1661be;
@@ -187,6 +187,17 @@ header .container {
 }
 .load div:nth-child(3) {
 	animation-delay: .4s;
+}
+.favs {
+	padding: 10px;
+	text-align: right;
+}
+.favs .fa-star {
+	color: #e3e1dc;
+}
+
+.favs .fa-star.fav {
+	color: #d0a839;
 }
 
 @-webkit-keyframes load {
